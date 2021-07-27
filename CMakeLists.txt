@@ -12,8 +12,8 @@ message(FATAL_ERROR "In-source builds are not allowed.\n"
 "this directory. Example: mkdir build && cd build && cmake ..")
 endif()
 
-set(codeforcebin
-A_watermelon)
+set(codeforcebin 
+A_Watermelon)
 
 foreach(bin ${codeforcebin})
     add_executable(${bin} codeforces/${bin}.cpp)
