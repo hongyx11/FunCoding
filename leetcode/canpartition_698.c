@@ -1,7 +1,4 @@
-#include <stdlib.h>
-#include <stdio.h>
-#include <memory.h>
-#include <stdbool.h>
+#include "header.h"
 
 int cmp(const void *a, const void *b){
     return *(int*)a - *(int*)b;
