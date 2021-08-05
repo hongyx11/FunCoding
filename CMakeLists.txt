@@ -24,5 +24,5 @@ canpartition_698
 verbal_arithmetic_puzzle_1307)
 
 foreach(bin ${leetcodebin})
-    add_executable(${bin} leetcode/${bin}.c)
+    add_executable(${bin} leetcode/${bin}.cpp)
 endforeach()

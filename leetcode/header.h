@@ -6,6 +6,13 @@
 #include <memory.h>
 #include <stdbool.h>
 
+#include <vector>
+#include <string>
+#include <unordered_map>
+#include <set>
+#include <iostream>
+using namespace std;
+
 
 
 
