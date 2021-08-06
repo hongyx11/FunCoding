@@ -12,17 +12,8 @@ message(FATAL_ERROR "In-source builds are not allowed.\n"
 "this directory. Example: mkdir build && cd build && cmake ..")
 endif()
 
-set(codeforcebin 
-Watermelon)
+include_directories(${CMAKE_SOURCE_DIR})
 
-foreach(bin ${codeforcebin})
-    add_executable(${bin} codeforces/${bin}.cpp)
-endforeach()
+include(codeforces/CMakeLists.txt)
 
-set(leetcodebin 
-canpartition_698
-verbal_arithmetic_puzzle_1307)
-
-foreach(bin ${leetcodebin})
-    add_executable(${bin} leetcode/${bin}.cpp)
-endforeach()
+include(leetcode/CMakeLists.txt)
