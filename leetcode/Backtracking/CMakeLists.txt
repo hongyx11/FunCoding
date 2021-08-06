@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
 
-set (PROJECT_NAME Coding)
+set (PROJECT_NAME Backtracking)
 PROJECT(${PROJECT_NAME} C CXX)
 set (CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -g")   
 set(CMAKE_C_STANDARD 11)
@@ -12,26 +12,10 @@ message(FATAL_ERROR "In-source builds are not allowed.\n"
 "this directory. Example: mkdir build && cd build && cmake ..")
 endif()
 
-include_directories(${CMAKE_SOURCE_DIR})
+set(BINS 
+CanPartition_698
+Verbalarithmicpuzzle_1307)
+foreach(bin ${BINS})
+    add_executable(${bin} ${bin}.cpp)
+endforeach()
 
-option(BUILD_CODEFORCE "build codeforces" ON)
-option(BUILD_LEETCODE "build leetcode" ON)
-
-if(BUILD_CODEFORCE)
-
-    add_subdirectory(codeforces)
-
-endif()
-
-if(BUILD_LEETCODE)
-
-    set(LC_components
-    MonotonicQueue
-    UnionFind 
-    Trie)
-
-    foreach(component ${LC_components})
-        add_subdirectory(leetcode/${component})
-    endforeach()
-
-endif()
