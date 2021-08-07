@@ -1,9 +1,9 @@
-# SegmentTree Notes
+# SegmentTree
 
 ## 0. 
 
 ## Reference Link
-[Introduction for SegmentTree](https://cp-algorithms.com/data_structures/segment_tree.html)
+1. https://cp-algorithms.com/data_structures/segment_tree.html
 
 
 
