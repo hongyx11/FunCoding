@@ -12,7 +12,9 @@ endif()
 
 
 set(BINS 
-Kthsmall_lexorder_440)
+ImplementTrie_208
+Kthsmall_lexorder_440
+SearchSuggestSystem_1268)
 foreach(bin ${BINS})
     add_executable(${bin} ${bin}.cpp)
 endforeach()

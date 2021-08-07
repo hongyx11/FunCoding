@@ -11,6 +11,8 @@ prefix with the searchWord. If there are more than three products with a common 
 return the three lexicographically minimums products.
 Return list of lists of the suggested products after each character of searchWord is typed. 
 
+https://leetcode.com/problems/search-suggestions-system/
+
 */
 
 
@@ -109,3 +111,7 @@ public:
     }
     
 };
+
+int main(){
+
+}
