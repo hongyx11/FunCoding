@@ -26,6 +26,8 @@ if(BUILD_LEETCODE)
     set(LC_components
     MonotonicQueue
     UnionFind 
+    BitManipulation
+    Greedy
     Trie)
 
     foreach(component ${LC_components})

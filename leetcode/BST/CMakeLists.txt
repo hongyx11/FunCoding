@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
 
-set (PROJECT_NAME Backtracking)
+set (PROJECT_NAME BST)
 PROJECT(${PROJECT_NAME} CXX)
 set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g")   
 set(CMAKE_CXX_STANDARD 11)
@@ -11,8 +11,7 @@ message(FATAL_ERROR "In-source builds are not allowed.\n")
 endif()
 
 set(BINS 
-CanPartition_698
-Verbalarithmicpuzzle_1307)
+StrongPasswdChecker_420)
 foreach(bin ${BINS})
     add_executable(${bin} ${bin}.cpp)
 endforeach()
