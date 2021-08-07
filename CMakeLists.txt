@@ -27,6 +27,7 @@ if(BUILD_LEETCODE)
     MonotonicQueue
     UnionFind 
     BitManipulation
+    SegmentTree
     Greedy
     Trie)
 
