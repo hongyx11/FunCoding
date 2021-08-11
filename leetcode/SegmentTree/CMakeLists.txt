@@ -13,7 +13,8 @@ endif()
 
 set(BINS 
 CountofRangeSum_327
-RectangleAreaII_850)
+RectangleAreaII_850
+RangeSumQuery_Mutable_307)
 foreach(bin ${BINS})
     add_executable(${bin} ${bin}.cpp)
 endforeach()
