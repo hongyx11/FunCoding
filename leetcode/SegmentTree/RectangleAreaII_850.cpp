@@ -23,7 +23,7 @@ class Solution {
 public:
     int rectangleArea(vector<vector<int>>& rectangles) {
         vector<int> tmpval;
-        SegmentTree_1D<int> seg(tmpval);
+        SegmentTree seg(tmpval);
     }
 };
 

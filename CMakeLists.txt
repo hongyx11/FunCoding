@@ -25,6 +25,7 @@ if(BUILD_LEETCODE)
 
     set(LC_components
     MonotonicQueue
+    MonotonicStack
     UnionFind 
     BitManipulation
     SegmentTree
