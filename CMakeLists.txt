@@ -15,6 +15,11 @@ include_directories(${CMAKE_SOURCE_DIR})
 option(BUILD_CODEFORCE "build codeforces" ON)
 option(BUILD_LEETCODE "build leetcode" ON)
 
+
+set(LIBSRC template/BinaryIndexedTree.cpp)
+add_library(algolib ${LIBSRC})
+target_include_directories(algolib PUBLIC ${CMAKE_SOURCE_DIR}/template)
+
 if(BUILD_CODEFORCE)
 
     add_subdirectory(codeforces)
@@ -27,6 +32,8 @@ if(BUILD_LEETCODE)
     MonotonicQueue
     MonotonicStack
     UnionFind 
+    BinarySearch
+    BinaryIndexedTree
     BitManipulation
     SegmentTree
     Greedy
@@ -36,4 +43,13 @@ if(BUILD_LEETCODE)
         add_subdirectory(leetcode/${component})
     endforeach()
 
+endif()
+
+if(BUILD_TEST)
+add_subdirectory(thirdparty/googletest)
+
+set(TESTBIN BinaryIndexedTree_test)
+add_executable(${TESTBIN} test/${TESTBIN}.cpp)
+target_include_directories(${TESTBIN} PUBLIC ${CMAKE_SOURCE_DIR}/template)
+target_link_libraries(${TESTBIN} gtest algolib)
 endif()
