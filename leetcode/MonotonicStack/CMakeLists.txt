@@ -14,6 +14,7 @@ endif()
 set(BINS 
 RemoveKDigits_402
 CreateMaxNum_321
+ConsBSTfromPreorder_1008
 RemoveDuplicateLetters_316)
 foreach(bin ${BINS})
     add_executable(${bin} ${bin}.cpp)
