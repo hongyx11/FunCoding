@@ -12,7 +12,9 @@ endif()
 
 
 set(BINS 
-RemoveKDigits_402)
+RemoveKDigits_402
+CreateMaxNum_321
+RemoveDuplicateLetters_316)
 foreach(bin ${BINS})
     add_executable(${bin} ${bin}.cpp)
 endforeach()
