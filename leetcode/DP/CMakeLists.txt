@@ -11,6 +11,7 @@ message(FATAL_ERROR "In-source builds are not allowed.\n")
 endif()
 
 set(BINS 
+StoneGameVII_1690
 SuperEggDrop_887
 UniqueBST_63)
 foreach(bin ${BINS})

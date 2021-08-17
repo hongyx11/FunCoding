@@ -32,6 +32,7 @@ if(BUILD_LEETCODE)
     MonotonicQueue
     MonotonicStack
     UnionFind 
+    DP
     BinarySearch
     BinaryIndexedTree
     BitManipulation
