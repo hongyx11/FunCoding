@@ -37,6 +37,7 @@ if(BUILD_LEETCODE)
     BinaryIndexedTree
     BitManipulation
     SegmentTree
+    Slidingwindow
     Greedy
     Trie)
 

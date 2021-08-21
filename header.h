@@ -9,6 +9,8 @@ using namespace std;
 
 typedef long long ll;
 typedef vector<int> vi;
+typedef vector<string> vs;
+# define umap unordered_map;
 typedef pair<int,int> pi;
 
 #define F first
