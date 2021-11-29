@@ -10,5 +10,3 @@ This repository records my coding on Leetcode and Codeforces.
     $mkdir build
     $cd build && cmake -DCMAKE_INSTALL_PREFIX=$(pwd) ..
     $make 
-
-Good to GO!
