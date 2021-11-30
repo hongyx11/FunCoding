@@ -1,10 +1,13 @@
 #ifndef HEADER_H
 #define HEADER_H
 
-#include <bits/stdc++.h>
-
 #include <stdlib.h>
-
+#include <vector>
+#include <unordered_map>
+#include <string>
+#include <stack>
+#include <iostream>
+#include <set>
 using namespace std;
 
 typedef long long ll;
