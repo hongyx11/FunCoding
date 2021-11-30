@@ -26,6 +26,10 @@ if(BUILD_CODEFORCE)
 
 endif()
 
+
+add_subdirectory(aosai)
+
+
 if(BUILD_LEETCODE)
 
     set(LC_components
